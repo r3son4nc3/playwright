@@ -1,10 +1,10 @@
-name: manual trigger tests
+name: Manual trigger tests
 
 on:
   workflow_dispatch:
 
 jobs:
-  tests_smoke:
+  tests:
     name: Run smoke test scenario
     runs-on: ubuntu-latest
     steps:
