@@ -41,7 +41,7 @@
       {
         "outputDir": "D:/git/playwright/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "id": "",
         "name": "",
         "testDir": "D:/git/playwright",
@@ -60,8 +60,8 @@
   },
   "suites": [
     {
-      "title": "tests\\add.test.ts",
-      "file": "tests/add.test.ts",
+      "title": "tests\\add_customer.test.ts",
+      "file": "tests/add_customer.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -80,7 +80,7 @@
                 {
                   "workerIndex": 0,
                   "status": "timedOut",
-                  "duration": 30000,
+                  "duration": 29999,
                   "error": {
                     "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
@@ -90,81 +90,33 @@
                     },
                     {
                       "location": {
-                        "file": "D:\\git\\playwright\\tests\\add.test.ts",
+                        "file": "D:\\git\\playwright\\tests\\add_customer.test.ts",
                         "column": 51,
                         "line": 9
                       },
-                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for getByRole('button', { name: 'Add' })\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://material-kit-pro-react.devias.io/auth/amplify/login?returnTo=%2Fdashboard%2Fcustomers'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Consent'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Full name *'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Full name *'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'Alex Garcia'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Email address *'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\git\\playwright\\tests\\add.test.ts:9:51\u001b[22m"
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for getByRole('button', { name: 'Add' })\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://material-kit-pro-react.devias.io/auth/amplify/login?returnTo=%2Fdashboard%2Fcustomers'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Consent'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Full name *'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Full name *'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'Alex Garcia'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Email address *'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\git\\playwright\\tests\\add_customer.test.ts:9:51\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-12-07T22:51:17.139Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\git\\playwright\\test-results\\tests-add-test\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\git\\playwright\\test-results\\tests-add-test\\video.webm"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 5,
-                  "status": "timedOut",
-                  "duration": 30010,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "D:\\git\\playwright\\tests\\add.test.ts",
-                        "column": 51,
-                        "line": 9
-                      },
-                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for getByRole('button', { name: 'Add' })\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://material-kit-pro-react.devias.io/auth/amplify/login?returnTo=%2Fdashboard%2Fcustomers'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Consent'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Full name *'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Full name *'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'Alex Garcia'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Email address *'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\git\\playwright\\tests\\add.test.ts:9:51\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2023-12-07T22:51:54.403Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\git\\playwright\\test-results\\tests-add-test-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\git\\playwright\\test-results\\tests-add-test-retry1\\video.webm"
-                    }
-                  ]
+                  "startTime": "2023-12-08T14:27:09.616Z",
+                  "attachments": []
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "5aa3cb3e8ccf60d426f2-4b10235bbf94081f3e14",
-          "file": "tests/add.test.ts",
+          "id": "e2945bf59fc0dac5368a-f7edda8e90d7e4e527f1",
+          "file": "tests/add_customer.test.ts",
           "line": 5,
           "column": 5
         }
       ]
     },
     {
-      "title": "tests\\delete.test.ts",
-      "file": "tests/delete.test.ts",
+      "title": "tests\\delete_customer.test.ts",
+      "file": "tests/delete_customer.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -183,34 +135,28 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 11205,
+                  "duration": 5632,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-12-07T22:51:17.155Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\git\\playwright\\test-results\\tests-delete-test\\test-finished-1.png"
-                    }
-                  ]
+                  "startTime": "2023-12-08T14:27:09.629Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "7232eac6827c1334c9c6-b6052113ded3d4251d41",
-          "file": "tests/delete.test.ts",
+          "id": "e7da934ddccf9fd9506b-7a1050f463de4ef69915",
+          "file": "tests/delete_customer.test.ts",
           "line": 5,
           "column": 5
         }
       ]
     },
     {
-      "title": "tests\\search.test.ts",
-      "file": "tests/search.test.ts",
+      "title": "tests\\search_customer.test.ts",
+      "file": "tests/search_customer.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -228,58 +174,8 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "status": "failed",
-                  "duration": 11809,
-                  "error": {
-                    "message": "Error: locator.fill: Test ended.\nCall log:\n  \u001b[2m- waiting for getByPlaceholder('Search customers')\u001b[22m\n\u001b[2m  -   locator resolved to <input value=\"\" type=\"text\" placeholder=\"Search custome…/>\u001b[22m\n\u001b[2m  - elementHandle.fill(\"Carson\")\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  -   element is visible, enabled and editable\u001b[22m\n",
-                    "stack": "Error: locator.fill: Test ended.\nCall log:\n  \u001b[2m- waiting for getByPlaceholder('Search customers')\u001b[22m\n\u001b[2m  -   locator resolved to <input value=\"\" type=\"text\" placeholder=\"Search custome…/>\u001b[22m\n\u001b[2m  - elementHandle.fill(\"Carson\")\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  -   element is visible, enabled and editable\u001b[22m\n\n    at D:\\git\\playwright\\tests\\search.test.ts:24:45",
-                    "location": {
-                      "file": "D:\\git\\playwright\\tests\\search.test.ts",
-                      "column": 45,
-                      "line": 24
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m\"Search customers\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m\"Search customers\"\u001b[39m)\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m   page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m\"Search customers\"\u001b[39m)\u001b[33m.\u001b[39mpress(\u001b[32m\"Enter\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"tbody\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(firstName)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\git\\playwright\\tests\\search.test.ts",
-                        "column": 45,
-                        "line": 24
-                      },
-                      "message": "Error: locator.fill: Test ended.\nCall log:\n  \u001b[2m- waiting for getByPlaceholder('Search customers')\u001b[22m\n\u001b[2m  -   locator resolved to <input value=\"\" type=\"text\" placeholder=\"Search custome…/>\u001b[22m\n\u001b[2m  - elementHandle.fill(\"Carson\")\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  -   element is visible, enabled and editable\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m\"Search customers\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m\"Search customers\"\u001b[39m)\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m   page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m\"Search customers\"\u001b[39m)\u001b[33m.\u001b[39mpress(\u001b[32m\"Enter\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"tbody\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(firstName)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\git\\playwright\\tests\\search.test.ts:24:45\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Value from Element text: Carson\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-12-07T22:51:17.138Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\git\\playwright\\test-results\\tests-search-test\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\git\\playwright\\test-results\\tests-search-test\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\git\\playwright\\tests\\search.test.ts",
-                    "column": 45,
-                    "line": 24
-                  }
-                },
-                {
-                  "workerIndex": 4,
                   "status": "passed",
-                  "duration": 3831,
+                  "duration": 6002,
                   "errors": [],
                   "stdout": [
                     {
@@ -287,30 +183,24 @@
                     }
                   ],
                   "stderr": [],
-                  "retry": 1,
-                  "startTime": "2023-12-07T22:51:32.004Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\git\\playwright\\test-results\\tests-search-test-retry1\\test-finished-1.png"
-                    }
-                  ]
+                  "retry": 0,
+                  "startTime": "2023-12-08T14:27:09.734Z",
+                  "attachments": []
                 }
               ],
-              "status": "flaky"
+              "status": "expected"
             }
           ],
-          "id": "85e601707272792ef5d9-af30fc97148aacbe1fba",
-          "file": "tests/search.test.ts",
+          "id": "7d238c0b683c38b625f1-25d726e9b5dfccbdf2e2",
+          "file": "tests/search_customer.test.ts",
           "line": 5,
           "column": 5
         }
       ]
     },
     {
-      "title": "tests\\update.test.ts",
-      "file": "tests/update.test.ts",
+      "title": "tests\\update_customer.test.ts",
+      "file": "tests/update_customer.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -329,34 +219,28 @@
                 {
                   "workerIndex": 3,
                   "status": "passed",
-                  "duration": 13327,
+                  "duration": 7308,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-12-07T22:51:17.231Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\git\\playwright\\test-results\\tests-update-test\\test-finished-1.png"
-                    }
-                  ]
+                  "startTime": "2023-12-08T14:27:09.633Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "97fb781ab1039ac5b26b-2dc0b34c70e347a82506",
-          "file": "tests/update.test.ts",
+          "id": "2c8421d56c9d4c2f501a-df10a62f97881acd4716",
+          "file": "tests/update_customer.test.ts",
           "line": 5,
           "column": 5
         }
       ]
     },
     {
-      "title": "tests\\view.test.ts",
-      "file": "tests/view.test.ts",
+      "title": "tests\\view_customers.test.ts",
+      "file": "tests/view_customers.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -375,33 +259,24 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4294,
+                  "duration": 3211,
                   "errors": [],
                   "stdout": [
-                    {
-                      "text": "Element text: CustomersImportExportAddAllAccepts MarketingProspectReturning​​Sort ByLast update (newest)Last update (oldest)Total orders (highest)Total orders (lowest)NameLocationOrdersSpentActionsCarson Darrincarson.darrin@devias.ioCleveland, Ohio, USA3$300.00Fran Perezfran.perez@devias.ioAtlanta, Georgia, USA0$0.00Jie Yan Songjie.yan.song@devias.ioNorth Canton, Ohio, USA6$5,600.00Anika Visseranika.visser@devias.ioMadrid, Madrid, Spain1$500.00Miron Vitoldmiron.vitold@devias.ioSan Diego, California, USA0$0.00Rows per page:51–5 of 10\n"
-                    },
                     {
                       "text": "The element is visible.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-12-07T22:51:29.443Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\git\\playwright\\test-results\\tests-view-test\\test-finished-1.png"
-                    }
-                  ]
+                  "startTime": "2023-12-08T14:27:15.806Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "4c8c66afcf3a47317e23-91cb6bd63b37e73b36b3",
-          "file": "tests/view.test.ts",
+          "id": "06092ddaad328a5e7883-fe1aea49c66218e4da97",
+          "file": "tests/view_customers.test.ts",
           "line": 5,
           "column": 5
         }
@@ -410,11 +285,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-12-07T22:51:15.840Z",
-    "duration": 72180.53,
-    "expected": 3,
+    "startTime": "2023-12-08T14:27:08.632Z",
+    "duration": 31754.265,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 1,
-    "flaky": 1
+    "flaky": 0
   }
 }

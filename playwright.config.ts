@@ -11,7 +11,18 @@ const config: PlaywrightTestConfig = {
   
   reporter: [
     ["dot"],
-    
+    [
+      "json",
+      {
+        outputFile: "reports/report.json",
+      },
+    ],
+    [
+      "html",
+      {
+        open: "always",
+      },
+    ],
   ],
 };
 export default config;

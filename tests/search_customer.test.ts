@@ -17,12 +17,12 @@ test("test", async ({ page }) => {
   const namesArray = elementText?.split(/[,\s]+/);
   const firstName = namesArray && namesArray?.length > 0 ? namesArray[0] : "No customer was found";
 
-  //console.log("Value from Element text:", firstName); commented to not shown in git actions 
+  //console.log("Value from Element text:", firstName); //commented to not shown in git actions 
 
   await expect(page.getByPlaceholder("Search customers")).toBeVisible();
 
-  page.getByPlaceholder("Search customers").fill(firstName);
-  page.getByPlaceholder("Search customers").press("Enter");
+  await page.getByPlaceholder("Search customers").fill(firstName);
+  await page.getByPlaceholder("Search customers").press("Enter");
 
   await expect(page.locator("tbody")).toContainText(firstName);
 });

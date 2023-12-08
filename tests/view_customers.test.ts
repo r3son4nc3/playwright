@@ -12,10 +12,10 @@ test("test", async ({ page }) => {
   await page.getByRole("button", { name: "Log In" }).click();
 
   const element = await page.waitForSelector(".MuiContainer-maxWidthXl");
-  const elementText = await element.textContent();
+  //const elementText = await element.textContent(); commented for not shown in github actions console
   const isVisible = await element.isVisible();
 
-  console.log("Element text:", elementText);
+  //console.log("Element text:", elementText); commented for not shown in github actions console
 
   if (isVisible) {
     console.log("The element is visible.");
