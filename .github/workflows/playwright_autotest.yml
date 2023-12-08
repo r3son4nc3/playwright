@@ -1,9 +1,8 @@
-name: Manual trigger tests
-
-on:
-  push:
-
 jobs:
+  on:
+  workflow_dispatch:
+    branches:
+     - development
   tests:
     name: Run smoke test scenario
     runs-on: ubuntu-latest
@@ -12,5 +11,7 @@ jobs:
       - uses: actions/setup-node@v3
       - name: Install dependencies
         run: npm ci
+      - name: Install playwright browsers
+        run: npx playwright install --with-deps
       - name: Run tests
         run: npm run autotest
