@@ -1,8 +1,7 @@
 import { test, expect } from "@playwright/test";
 
-console.log("Test case: search customer");
 
-test("test", async ({ page }) => {
+test("Search customer", async ({ page }) => {
   await page.goto(
     "https://material-kit-pro-react.devias.io/dashboard/customers"
   );

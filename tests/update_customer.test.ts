@@ -1,8 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-console.log("Test case: update customer");
-
-test("test", async ({ page }) => {
+test("Update customer", async ({ page }) => {
   await page.goto(
     "https://material-kit-pro-react.devias.io/dashboard/customers"
   );
@@ -21,7 +19,6 @@ test("test", async ({ page }) => {
 
   await page
     .locator("div")
-    .filter({ hasText: "Customer updated" })
-    .nth(3)
+    .filter({ hasText: "Customer updated" }).nth(3)
     .focus({ timeout: 1000 });
 });

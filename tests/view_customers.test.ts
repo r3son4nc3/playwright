@@ -1,8 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-console.log("Test case: view customers");
-
-test("test", async ({ page }) => {
+test("View customers", async ({ page }) => {
   await page.goto(
     "https://material-kit-pro-react.devias.io/dashboard/customers"
   );
@@ -18,7 +16,7 @@ test("test", async ({ page }) => {
   //console.log("Element text:", elementText); commented for not shown in github actions console
 
   if (isVisible) {
-    console.log("The element is visible.");
+    //console.log("The element is visible.");commented for not shown in github actions console
   } else {
     console.log("The element is not visible.");
   }

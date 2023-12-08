@@ -1,8 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-console.log('Test case: add new customer');
-
-test('test', async ({ page }) => {
+test('Add new customer', async ({ page }) => {
   await page.goto('https://material-kit-pro-react.devias.io/dashboard/customers');
   await page.goto('https://material-kit-pro-react.devias.io/auth/amplify/login?returnTo=%2Fdashboard%2Fcustomers');
   await page.getByRole('button', { name: 'Consent' }).click();

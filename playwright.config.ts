@@ -8,21 +8,14 @@ const config: PlaywrightTestConfig = {
     //screenshot: "off",
     //video: "retain-on-failure",
   },
-  
+  retries: 1,
   reporter: [
-    ["dot"],
-    [
-      "json",
-      {
-        outputFile: "reports/report.json",
-      },
-    ],
-    [
-      "html",
-      {
-        open: "always",
-      },
-    ],
-  ],
+      ["dot"], ["json",{
+outputFile: "jsonreporst/Jsonreport.json"
+    } ], ["html", {
+open:"always"
+}]
+]
+
 };
-export default config;
+export default config
