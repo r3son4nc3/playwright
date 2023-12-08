@@ -1,8 +1,11 @@
-jobs:
-  on:
+name: Manual trigger tests
+
+on:
   workflow_dispatch:
     branches:
      - development
+
+jobs:
   tests:
     name: Run smoke test scenario
     runs-on: ubuntu-latest
