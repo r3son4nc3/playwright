@@ -19,6 +19,7 @@ test("Update customer", async ({ page }) => {
 
   await page
     .locator("div")
-    .filter({ hasText: "Customer updated" }).nth(3)
+    .filter({ hasText: "Customer updated" })
+    .nth(3)
     .focus({ timeout: 1000 });
 });

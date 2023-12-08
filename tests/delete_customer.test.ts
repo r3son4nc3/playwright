@@ -1,7 +1,5 @@
 import { test, expect } from "@playwright/test";
 
-
-
 test("Delete customer", async ({ page }) => {
   await page.goto(
     "https://material-kit-pro-react.devias.io/dashboard/customers"

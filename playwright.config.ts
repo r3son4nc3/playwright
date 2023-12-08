@@ -1,7 +1,7 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-   testMatch: /.*test.ts/,
+  testMatch: /.*test.ts/,
   use: {
     headless: true,
     channel: "chrome",
@@ -10,12 +10,19 @@ const config: PlaywrightTestConfig = {
   },
   retries: 1,
   reporter: [
-      ["dot"], ["json",{
-outputFile: "jsonreporst/Jsonreport.json"
-    } ], ["html", {
-open:"always"
-}]
-]
-
+    ["dot"],
+    [
+      "json",
+      {
+        outputFile: "jsonreporst/Jsonreport.json",
+      },
+    ],
+    [
+      "html",
+      {
+        open: "always",
+      },
+    ],
+  ],
 };
-export default config
+export default config;

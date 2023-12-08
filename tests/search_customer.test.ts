@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test";
 
-
 test("Search customer", async ({ page }) => {
   await page.goto(
     "https://material-kit-pro-react.devias.io/dashboard/customers"
@@ -14,9 +13,12 @@ test("Search customer", async ({ page }) => {
   const elementText = await element.textContent();
 
   const namesArray = elementText?.split(/[,\s]+/);
-  const firstName = namesArray && namesArray?.length > 0 ? namesArray[0] : "No customer was found";
+  const firstName =
+    namesArray && namesArray?.length > 0
+      ? namesArray[0]
+      : "No customer was found";
 
-  //console.log("Value from Element text:", firstName); //commented to not shown in git actions 
+  //console.log("Value from Element text:", firstName); //commented to not shown in git actions
 
   await expect(page.getByPlaceholder("Search customers")).toBeVisible();
 
