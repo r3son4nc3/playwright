@@ -5,8 +5,6 @@ const config: PlaywrightTestConfig = {
   use: {
     headless: true,
     channel: "chrome",
-    //screenshot: "off",
-    //video: "retain-on-failure",
   },
   retries: 1,
   reporter: [
@@ -14,7 +12,7 @@ const config: PlaywrightTestConfig = {
     [
       "json",
       {
-        outputFile: "jsonreporst/Jsonreport.json",
+        outputFile: "reports/report.json",
       },
     ],
     [
