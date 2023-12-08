@@ -17,7 +17,7 @@ test("test", async ({ page }) => {
   const namesArray = elementText?.split(/[,\s]+/);
   const firstName = namesArray && namesArray?.length > 0 ? namesArray[0] : "No customer was found";
 
-  console.log("Value from Element text:", firstName);
+  //console.log("Value from Element text:", firstName); commented to not shown in git actions 
 
   await expect(page.getByPlaceholder("Search customers")).toBeVisible();
 
