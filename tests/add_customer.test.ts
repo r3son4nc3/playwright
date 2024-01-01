@@ -1,12 +1,9 @@
 import { test, expect } from "@playwright/test";
 
 test("Add new customer", async ({ page }) => {
-  await page.goto(
-    "https://material-kit-pro-react.devias.io/dashboard/customers"
-  );
-  await page.goto(
-    "https://material-kit-pro-react.devias.io/auth/amplify/login?returnTo=%2Fdashboard%2Fcustomers"
-  );
+  await page.goto('https://material-kit-pro-react.devias.io/dashboard/customers');
+  await page.goto('https://material-kit-pro-react.devias.io/auth/jwt/login?returnTo=%2Fdashboard%2Fcustomers');
+  
   await page.getByRole("button", { name: "Consent" }).click();
   await page.getByRole("button", { name: "Add" }).click();
   await page.getByLabel("Full name *").click();

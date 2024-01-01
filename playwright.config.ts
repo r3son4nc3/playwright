@@ -3,10 +3,10 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 const config: PlaywrightTestConfig = {
   testMatch: /.*test.ts/,
   use: {
-    headless: true,
+    headless: false,
     channel: "chrome",
   },
-  retries: 1,
+  //retries: 1,
   reporter: [
     ["dot"],
     [
